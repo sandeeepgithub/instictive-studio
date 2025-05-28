@@ -1,11 +1,8 @@
 # Base image
-FROM node:20
+FROM node:22-alpine
 
 # Set working directory
 WORKDIR /app
-
-# Install netcat for health check (MongoDB availability)
-RUN apt-get update && apt-get install -y netcat-openbsd
 
 ENV DOCKER_MONGO_URL=true
 
