@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { fetchListings } from "@/lib/fetch";
 import { Listing, Facets } from "@/types";
+import Button from "../components/Button";
+import List from "../components/List";
 
 export default function SearchPage() {
   const [q, setQ] = useState("");
@@ -30,7 +32,14 @@ export default function SearchPage() {
 
   const handleCategoryChange = (value: string) => {
     setCategory(value);
-    setFilters({}); // Clear all other filters
+    setFilters({});
+    setPage(1);
+  };
+
+  const clearAllFilters = () => {
+    setQ("");
+    setCategory("");
+    setFilters({});
     setPage(1);
   };
 
@@ -73,46 +82,40 @@ export default function SearchPage() {
         </div>
       ))}
 
+      <div className="mb-6">
+        <Button
+          clickHandler={clearAllFilters}
+          className={"px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"}
+          title={"Clear All Filters"}
+          isDisabled={false}
+        />
+      </div>
+
       <div className="mt-8 space-y-6">
-        {listings.map((listing) => (
-          <div
-            key={listing._id}
-            className="border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 rounded-lg p-5 shadow-sm"
-          >
-            <h2 className="text-xl font-semibold mb-1">{listing.title}</h2>
-            <p className="mb-2 text-gray-700 dark:text-gray-300">
-              {listing.description}
-            </p>
-            <div className="text-sm space-y-1">
-              {Object.entries(listing.attributes).map(([k, v]) => (
-                <div key={k}>
-                  <span className="font-medium capitalize">{k}:</span>{" "}
-                  <span>{v}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+        <List listings={listings} />
       </div>
 
       <div className="flex justify-between items-center mt-8 text-sm">
-        <button
-          onClick={() => setPage((p) => Math.max(p - 1, 1))}
-          disabled={page === 1}
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Prev
-        </button>
+        <Button
+          clickHandler={() => setPage((p) => Math.max(p - 1, 1))}
+          isDisabled={page === 1}
+          title={"Prev"}
+          className={
+            "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          }
+        />
         <span className="text-gray-700 dark:text-gray-300">
           Page {page} of {Math.ceil(total / perPage)}
         </span>
-        <button
-          onClick={() => setPage((p) => p + 1)}
-          disabled={page * perPage >= total}
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Next
-        </button>
+
+        <Button
+          clickHandler={() => setPage((p) => p + 1)}
+          isDisabled={page * perPage >= total}
+          title={"Next"}
+          className={
+            "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+          }
+        />
       </div>
     </div>
   );
