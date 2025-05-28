@@ -4,9 +4,10 @@ import Listing from "../models/Listing";
 import categoriesData from "../data/categories.json";
 import listingsData from "../data/listings.json";
 
-const MONGODB_URI = process.env.DOCKER_MONGO_URL
-  ? "mongodb://host.docker.internal:27017/b2b-marketplace"
-  : process.env.MONGODB_URI || "mongodb://localhost:27017/b2b-marketplace";
+const MONGODB_URI =
+  process.env.COMPOSE_MONGO_URL ||
+  process.env.MONGODB_URI ||
+  "mongodb://localhost:27017/b2b-marketplace";
 
 async function seed() {
   try {

@@ -4,8 +4,6 @@ FROM node:22-alpine
 # Set working directory
 WORKDIR /app
 
-ENV DOCKER_MONGO_URL=true
-
 # Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install

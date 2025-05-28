@@ -17,6 +17,7 @@
 /.next/
 /out/
 /data/db
+/mongo-data
 
 # production
 /build

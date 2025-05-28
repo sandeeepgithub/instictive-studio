@@ -1,9 +1,27 @@
-# docker-compose.yml example
-version: "3"
+version: "3.8"
+
 services:
   mongo:
     image: mongo:latest
+    container_name: b2b-mongo
+    restart: unless-stopped
     ports:
       - "27017:27017"
     volumes:
-      - ./data/db:/data/db
+      - ./mongo-data:/data/db
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: b2b-app
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    environment:
+      - COMPOSE_MONGO_URL=mongodb://mongo:27017/b2b-marketplace
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
