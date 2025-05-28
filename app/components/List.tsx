@@ -1,6 +1,17 @@
 import React from "react";
 
-const List = ({ listings }) => {
+interface Listing {
+  _id: string;
+  title: string;
+  description: string;
+  attributes: Record<string, string>;
+}
+
+interface ListProps {
+  listings: Listing[];
+}
+
+const List: React.FC<ListProps> = ({ listings }) => {
   return (
     <>
       {listings.map((listing) => (

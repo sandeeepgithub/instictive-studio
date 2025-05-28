@@ -1,6 +1,18 @@
 import React from "react";
 
-const Button = ({ clickHandler, isDisabled, title, className }) => {
+interface ButtonProps {
+  clickHandler: () => void;
+  isDisabled?: boolean;
+  title: string;
+  className?: string;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  clickHandler,
+  isDisabled,
+  title,
+  className,
+}) => {
   return (
     <button onClick={clickHandler} disabled={isDisabled} className={className}>
       {title}

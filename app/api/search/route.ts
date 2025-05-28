@@ -5,6 +5,14 @@ import Category from "@/models/Category";
 import dbConnect from "@/lib/mongoose";
 import mongoose from "mongoose";
 
+interface CategoryType {
+  _id: string;
+  name: string;
+  slug: string;
+  attributeSchema: Record<string, any>;
+  uid: string;
+}
+
 export async function GET(req: NextRequest) {
   await dbConnect();
 
@@ -23,7 +31,9 @@ export async function GET(req: NextRequest) {
   let category = null;
 
   if (categorySlug) {
-    category = await Category.findOne({ slug: categorySlug }).lean();
+    category = await Category.findOne({
+      slug: categorySlug,
+    }).lean<CategoryType>();
     if (!category) {
       return NextResponse.json({ results: [], facets: {}, total: 0 });
     }
@@ -38,7 +48,7 @@ export async function GET(req: NextRequest) {
     ];
   }
 
-  if (category) {
+  if (category && "_id" in category) {
     matchStage.categoryId = new mongoose.Types.ObjectId(category._id);
   }
 

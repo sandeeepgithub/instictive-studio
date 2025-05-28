@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose from "mongoose";
 
-const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/b2b-marketplace";
+const MONGODB_URI = process.env.DOCKER_MONGO_URL
+  ? "mongodb://host.docker.internal:27017/b2b-marketplace"
+  : process.env.MONGODB_URI || "mongodb://localhost:27017/b2b-marketplace";
 
 if (!MONGODB_URI) {
   throw new Error(

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "tv-1",
+    "title": "Samsung 43 Inch Smart TV",
+    "description": "Samsung 43\" LED Smart TV with advanced features",
+    "price": 710,
+    "location": "Chennai",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Samsung",
+      "screenSize": "43"
+    },
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "tv-2",
+    "title": "Panasonic 65 Inch Smart TV",
+    "description": "Panasonic 65\" LED Smart TV with advanced features",
+    "price": 322,
+    "location": "Mumbai",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Panasonic",
+      "screenSize": "65"
+    },
+    "createdAt": "2024-01-02T00:00:00Z"
+  },
+  {
+    "id": "tv-3",
+    "title": "Panasonic 40 Inch Smart TV",
+    "description": "Panasonic 40\" LED Smart TV with advanced features",
+    "price": 645,
+    "location": "Chennai",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Panasonic",
+      "screenSize": "40"
+    },
+    "createdAt": "2024-01-03T00:00:00Z"
+  },
+  {
+    "id": "tv-4",
+    "title": "Sony 68 Inch Smart TV",
+    "description": "Sony 68\" LED Smart TV with advanced features",
+    "price": 319,
+    "location": "Pune",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Sony",
+      "screenSize": "68"
+    },
+    "createdAt": "2024-01-04T00:00:00Z"
+  },
+  {
+    "id": "tv-5",
+    "title": "Sony 43 Inch Smart TV",
+    "description": "Sony 43\" LED Smart TV with advanced features",
+    "price": 459,
+    "location": "Hyderabad",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Sony",
+      "screenSize": "43"
+    },
+    "createdAt": "2024-01-05T00:00:00Z"
+  },
+  {
+    "id": "tv-6",
+    "title": "Samsung 65 Inch Smart TV",
+    "description": "Samsung 65\" LED Smart TV with advanced features",
+    "price": 553,
+    "location": "Delhi",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Samsung",
+      "screenSize": "65"
+    },
+    "createdAt": "2024-01-06T00:00:00Z"
+  },
+  {
+    "id": "tv-7",
+    "title": "Sony 65 Inch Smart TV",
+    "description": "Sony 65\" LED Smart TV with advanced features",
+    "price": 638,
+    "location": "Pune",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Sony",
+      "screenSize": "65"
+    },
+    "createdAt": "2024-01-07T00:00:00Z"
+  },
+  {
+    "id": "tv-8",
+    "title": "TCL 50 Inch Smart TV",
+    "description": "TCL 50\" LED Smart TV with advanced features",
+    "price": 445,
+    "location": "Delhi",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "TCL",
+      "screenSize": "50"
+    },
+    "createdAt": "2024-01-08T00:00:00Z"
+  },
+  {
+    "id": "tv-9",
+    "title": "LG 40 Inch Smart TV",
+    "description": "LG 40\" LED Smart TV with advanced features",
+    "price": 611,
+    "location": "Chennai",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "LG",
+      "screenSize": "40"
+    },
+    "createdAt": "2024-01-09T00:00:00Z"
+  },
+  {
+    "id": "tv-10",
+    "title": "Sony 40 Inch Smart TV",
+    "description": "Sony 40\" LED Smart TV with advanced features",
+    "price": 744,
+    "location": "Pune",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Sony",
+      "screenSize": "40"
+    },
+    "createdAt": "2024-01-10T00:00:00Z"
+  },
+  {
+    "id": "tv-11",
+    "title": "TCL 34 Inch Smart TV",
+    "description": "TCL 34\" LED Smart TV with advanced features",
+    "price": 711,
+    "location": "Chennai",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "TCL",
+      "screenSize": "34"
+    },
+    "createdAt": "2024-01-11T00:00:00Z"
+  },
+  {
+    "id": "tv-12",
+    "title": "TCL 32 Inch Smart TV",
+    "description": "TCL 32\" LED Smart TV with advanced features",
+    "price": 498,
+    "location": "Pune",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "TCL",
+      "screenSize": "32"
+    },
+    "createdAt": "2024-01-12T00:00:00Z"
+  },
+  {
+    "id": "tv-13",
+    "title": "LG 42 Inch Smart TV",
+    "description": "LG 42\" LED Smart TV with advanced features",
+    "price": 385,
+    "location": "Bangalore",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "LG",
+      "screenSize": "42"
+    },
+    "createdAt": "2024-01-13T00:00:00Z"
+  },
+  {
+    "id": "tv-14",
+    "title": "Panasonic 42 Inch Smart TV",
+    "description": "Panasonic 42\" LED Smart TV with advanced features",
+    "price": 593,
+    "location": "Hyderabad",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Panasonic",
+      "screenSize": "42"
+    },
+    "createdAt": "2024-01-14T00:00:00Z"
+  },
+  {
+    "id": "tv-15",
+    "title": "Sony 55 Inch Smart TV",
+    "description": "Sony 55\" LED Smart TV with advanced features",
+    "price": 305,
+    "location": "Delhi",
+    "categoryId": "1",
+    "categoryUid": "1",
+    "attributes": {
+      "brand": "Sony",
+      "screenSize": "55"
+    },
+    "createdAt": "2024-01-15T00:00:00Z"
+  },
+  {
+    "id": "shoes-1",
+    "title": "Asics Running Shoes Size 9",
+    "description": "Asics performance running shoes, size 9",
+    "price": 97,
+    "location": "Bangalore",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "9"
+    },
+    "createdAt": "2024-01-16T00:00:00Z"
+  },
+  {
+    "id": "shoes-2",
+    "title": "Asics Running Shoes Size 10",
+    "description": "Asics performance running shoes, size 10",
+    "price": 80,
+    "location": "Mumbai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "10"
+    },
+    "createdAt": "2024-01-17T00:00:00Z"
+  },
+  {
+    "id": "shoes-3",
+    "title": "Puma Running Shoes Size 7",
+    "description": "Puma performance running shoes, size 7",
+    "price": 148,
+    "location": "Pune",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Puma",
+      "size": "7"
+    },
+    "createdAt": "2024-01-18T00:00:00Z"
+  },
+  {
+    "id": "shoes-4",
+    "title": "Asics Running Shoes Size 12",
+    "description": "Asics performance running shoes, size 12",
+    "price": 112,
+    "location": "Delhi",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "12"
+    },
+    "createdAt": "2024-01-19T00:00:00Z"
+  },
+  {
+    "id": "shoes-5",
+    "title": "Reebok Running Shoes Size 10",
+    "description": "Reebok performance running shoes, size 10",
+    "price": 120,
+    "location": "Hyderabad",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Reebok",
+      "size": "10"
+    },
+    "createdAt": "2024-01-20T00:00:00Z"
+  },
+  {
+    "id": "shoes-6",
+    "title": "Nike Running Shoes Size 10",
+    "description": "Nike performance running shoes, size 10",
+    "price": 106,
+    "location": "Mumbai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Nike",
+      "size": "10"
+    },
+    "createdAt": "2024-01-21T00:00:00Z"
+  },
+  {
+    "id": "shoes-7",
+    "title": "Adidas Running Shoes Size 14",
+    "description": "Adidas performance running shoes, size 14",
+    "price": 138,
+    "location": "Hyderabad",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Adidas",
+      "size": "14"
+    },
+    "createdAt": "2024-01-22T00:00:00Z"
+  },
+  {
+    "id": "shoes-8",
+    "title": "Asics Running Shoes Size 11",
+    "description": "Asics performance running shoes, size 11",
+    "price": 85,
+    "location": "Mumbai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "11"
+    },
+    "createdAt": "2024-01-23T00:00:00Z"
+  },
+  {
+    "id": "shoes-9",
+    "title": "Asics Running Shoes Size 4",
+    "description": "Asics performance running shoes, size 4",
+    "price": 114,
+    "location": "Pune",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "4"
+    },
+    "createdAt": "2024-01-24T00:00:00Z"
+  },
+  {
+    "id": "shoes-10",
+    "title": "Adidas Running Shoes Size 7",
+    "description": "Adidas performance running shoes, size 7",
+    "price": 129,
+    "location": "Chennai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Adidas",
+      "size": "7"
+    },
+    "createdAt": "2024-01-25T00:00:00Z"
+  },
+  {
+    "id": "shoes-11",
+    "title": "Reebok Running Shoes Size 7",
+    "description": "Reebok performance running shoes, size 7",
+    "price": 109,
+    "location": "Chennai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Reebok",
+      "size": "7"
+    },
+    "createdAt": "2024-01-26T00:00:00Z"
+  },
+  {
+    "id": "shoes-12",
+    "title": "Asics Running Shoes Size 6",
+    "description": "Asics performance running shoes, size 6",
+    "price": 154,
+    "location": "Mumbai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "6"
+    },
+    "createdAt": "2024-01-27T00:00:00Z"
+  },
+  {
+    "id": "shoes-13",
+    "title": "Adidas Running Shoes Size 10",
+    "description": "Adidas performance running shoes, size 10",
+    "price": 94,
+    "location": "Ahmedabad",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Adidas",
+      "size": "10"
+    },
+    "createdAt": "2024-01-28T00:00:00Z"
+  },
+  {
+    "id": "shoes-14",
+    "title": "Asics Running Shoes Size 7",
+    "description": "Asics performance running shoes, size 7",
+    "price": 125,
+    "location": "Bangalore",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Asics",
+      "size": "7"
+    },
+    "createdAt": "2024-01-29T00:00:00Z"
+  },
+  {
+    "id": "shoes-15",
+    "title": "Puma Running Shoes Size 11",
+    "description": "Puma performance running shoes, size 11",
+    "price": 82,
+    "location": "Chennai",
+    "categoryId": "2",
+    "categoryUid": "2",
+    "attributes": {
+      "brand": "Puma",
+      "size": "11"
+    },
+    "createdAt": "2024-01-30T00:00:00Z"
+  }
+]

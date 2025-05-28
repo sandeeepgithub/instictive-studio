@@ -1,0 +1,20 @@
+[
+  {
+    "uid": "1",
+    "name": "Televisions",
+    "slug": "televisions",
+    "attributeSchema": {
+      "brand": ["Sony", "Samsung", "LG", "Panasonic", "TCL"],
+      "screenSize": ["32", "40", "43", "50", "55", "65"]
+    }
+  },
+  {
+    "uid": "2",
+    "name": "Running Shoes",
+    "slug": "running-shoes",
+    "attributeSchema": {
+      "brand": ["Nike", "Adidas", "Puma", "Reebok", "Asics"],
+      "size": ["7", "8", "9", "10", "11"]
+    }
+  }
+]

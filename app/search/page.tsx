@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { fetchListings } from "@/lib/fetch";
-import { Listing, Facets } from "@/types";
+import { Listing, Facets } from "@/app/types";
 import Button from "../components/Button";
 import List from "../components/List";
 
