@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + MongoDB App
 
-## Getting Started
+This is a web application built with **Next.js** and uses **MongoDB** as the backend. The app is containerized using Docker and supports running locally using Docker Compose or manual setup steps.
 
-First, run the development server:
+## 🚀 Getting Started Locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Option 1: Using Docker Compose (Recommended)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Run the following command:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   docker compose up
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. This will:
 
-## Learn More
+   - Pull the latest images.
+   - Start both the Next.js app and MongoDB.
+   - Seed static data from a JSON file into the database.
 
-To learn more about Next.js, take a look at the following resources:
+3. Once the setup is complete, the app will be available at:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   http://localhost:3000
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### Option 2: Manually Using Docker (If Docker Compose Fails)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Pull the Next.js app image from Docker Hub:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   docker pull sandeeepmodi/instinctive-studio-app
+   ```
+
+2. Pull the latest MongoDB image:
+
+   ```bash
+   docker pull mongo:latest
+   ```
+
+3. Start MongoDB on port 27017 and expose it to the host machine:
+
+   ```bash
+   docker run -d -p 27017:27017 --name mongodb mongo:latest
+   ```
+
+4. Start the Next.js app container, mapping any port (e.g., 3000):
+
+   ```bash
+   docker run -p 3000:3000 sandeeepmodi/instinctive-studio-app
+   ```
+
+5. The app should now be available at:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+### Option 3: Run Locally with Node (If All Docker Options Fail)
+
+1. Pull and run MongoDB on your local machine:
+
+   ```bash
+   docker run -d -p 27017:27017 --name mongodb mongo:latest
+   ```
+
+2. Clone the repository (if you haven't already) and install dependencies:
+
+   ```bash
+   git clone https://github.com/sandeeepgithub/instictive-studio.git
+   cd instictive-studio
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. The app will be available at:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📝 Notes
+
+- Ensure MongoDB is running and accessible on `localhost:27017` for local development.
+- The app automatically seeds static data on initial startup.
+- Add `MONGODB_URI=mongodb://localhost:27017/b2b-marketplace` if running the app using `npm run dev`
